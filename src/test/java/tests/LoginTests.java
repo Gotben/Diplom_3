@@ -2,10 +2,8 @@ package tests;
 
 
 import io.qameta.allure.junit4.DisplayName;
-import junitparams.JUnitParamsRunner;
 import org.junit.Before;
 import org.junit.Test;
-import org.junit.runner.RunWith;
 import pages.*;
 
 
@@ -20,7 +18,6 @@ public class LoginTests extends BaseTest {
     private MainPage mainPage;
     private RegistrationPage registrationPage;
     private ForgotPasswordPage forgotPasswordPage;
-    private AccountPage accountPage;
 
     @Before
     public void setupPages() {
@@ -28,7 +25,6 @@ public class LoginTests extends BaseTest {
         mainPage = new MainPage();
         registrationPage = new RegistrationPage();
         forgotPasswordPage = new ForgotPasswordPage();
-        accountPage = new AccountPage();
 
     }
 
